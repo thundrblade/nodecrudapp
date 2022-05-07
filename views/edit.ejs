@@ -1,0 +1,60 @@
+<%- include('./partials/header.ejs') %>
+
+
+
+<div class="container">
+    <div class="row">
+
+<div class="col-sm-6 mt-5">
+<h1>Update Student</h1>
+<hr>
+<form action="/student/update/<%= data._id %>" method="POST">
+
+    <div class="mb-3">
+        <label class="form-label" for="name">Name</label>
+        <input class="form-control" type="text" name="name" value="<%= data.name %>" placeholder="Your Name"/>
+    </div>
+    
+   
+    <div class="mb-3">
+        <label class="form-label" for="text">Phone</label>
+        <input class="form-control" type="text" name="phone"  value="<%= data.phone %>" id="phone" placeholder="Your Phone"/>
+    </div>
+   
+    <div class="mb-3">
+        <label class="form-label" for="age">Age</label>
+        <input class="form-control" type="text" name="age" value="<%= data.age %>" id="age" placeholder="age"/>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="fees">Fees</label>
+        <input class="form-control" type="text" name="fees" id="fees" value="<%= data.fees %>" placeholder="fees"/>
+    </div>
+   
+    
+    <div class="mb-3">
+<button type="submit" class="btn btn-warning">Update</button> 
+<button type="submit" class="btn btn-secondary">Back to Home</button>    
+
+</div>
+</form>
+</div>
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<%- include('./partials/footer.ejs') %>
+
+
+
+
+
